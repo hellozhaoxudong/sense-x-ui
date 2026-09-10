@@ -1,0 +1,31 @@
+// 地图标记点信息
+.marker-label{
+  min-width: 180px;
+
+  .marker-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    border-bottom: 1px solid #eee;
+
+    .marker-title{
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .marker-status-success{
+      font-size: 12px;
+      color: green;
+    }
+  }
+
+  .marker-content{
+    padding: 4px 8px;
+    max-height: 120px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
