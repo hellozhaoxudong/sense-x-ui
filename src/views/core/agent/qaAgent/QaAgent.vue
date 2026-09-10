@@ -38,7 +38,7 @@
 
       <!--声明-->
       <div class="chat-author">
-        国新健康BI分析平台提供智能化服务
+        xxx
       </div>
     </div>
   </div>

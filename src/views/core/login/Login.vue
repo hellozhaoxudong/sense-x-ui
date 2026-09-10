@@ -44,7 +44,7 @@
     </div>
     <!--脚本-->
     <div class="footer">
-      版权所有：国新健康保障服务有限公司
+      版权所有：
     </div>
   </div>
 </template>

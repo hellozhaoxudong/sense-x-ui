@@ -151,7 +151,7 @@ watch(() => props.modelValue, (newVal) => {
  */
 function initEditor(){
   // 从缓存获取编辑器主题
-  const themeCache = localStorage.getItem('crhms.cdmp.editor.theme');
+  const themeCache = localStorage.getItem('sense.editor.theme');
   if (themeCache === 'dark'){
     currentTheme.value = 'dark'
   }
@@ -206,7 +206,7 @@ function changeTheme(v){
   }
 
   // 缓存编辑器主题
-  localStorage.setItem('crhms.cdmp.editor.theme', v);
+  localStorage.setItem('sense.editor.theme', v);
 }
 
 // 切换语言

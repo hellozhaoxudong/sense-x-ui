@@ -64,8 +64,6 @@ import EditRoleMenuAlias from "./EditRoleMenuAlias.vue";
 import {deleteRole, exportRole, queryRole} from "../../../api/core/user/user.js";
 import {Message, Modal} from "@arco-design/web-vue";
 import {downloadFile} from "../../../utils/file.js";
-import {EedRoleMap} from "../../eed/utils/EedRoleUtil.js";
-import {changeCurrentEedRole} from "../../../api/eed/sys/eedSysUserRole.js";
 
 
 // 表格数据
