@@ -47,14 +47,30 @@ export const UserStore =  defineStore('UserStore', {
         setAppCodeByPath(path){
             let app = '';
 
-            // 遍历后端返回的菜单，查找所属应用
-            this.appList.forEach(item=>{
-                item.menuList.forEach(menu=>{
-                    if (menu.menuPath === path){
-                        app = item.appCode;
+            // 递归查找菜单
+            const findMenu = (menus) => {
+                for (const menu of menus) {
+                    if (menu.menuPath === path) {
+                        return true;
                     }
-                })
-            })
+
+                    if (menu.children && menu.children.length > 0) {
+                        if (findMenu(menu.children)) {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            };
+
+            // 遍历应用
+            for (const item of this.appList) {
+                if (findMenu(item.menuList || [])) {
+                    app = item.appCode;
+                    break;
+                }
+            }
 
             if (app){
                 this.setAppCode(app);
