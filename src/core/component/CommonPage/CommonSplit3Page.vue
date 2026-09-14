@@ -6,7 +6,7 @@
         <div class="header-title">{{title1}}</div>
       </div>
       <div class="split-content">
-        <slot name="left"></slot>
+        <slot name="split-1"></slot>
       </div>
     </div>
 
@@ -15,7 +15,7 @@
         <div class="header-title">{{title2}}</div>
       </div>
       <div class="split-content">
-        <slot name="left"></slot>
+        <slot name="split-2"></slot>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
         <div class="header-title">{{title3}}</div>
       </div>
       <div class="split-content">
-        <slot name="right"></slot>
+        <slot name="split-3"></slot>
       </div>
     </div>
   </div>
